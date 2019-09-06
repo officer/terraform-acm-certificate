@@ -22,6 +22,7 @@ variable "subject_alternative_names" {
 }
 
 variable "tags" {
-  description = "Tags for resource"
-  type = "map"
+  description = "(Optional) Tags for resource"
+  type        = "map"
+  default     = {}
 }

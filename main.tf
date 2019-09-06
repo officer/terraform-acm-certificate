@@ -1,6 +1,6 @@
 provider "aws" {
   version = "~> 2.0"
-  region  = "${var.region}"
+  region  = "${var.region != "none" ? var.region : data.aws_region.current.name}"
 }
 
 # Certificate
