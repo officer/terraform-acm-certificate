@@ -13,7 +13,7 @@ variable "domain_name" {
 variable "region" {
   description = "(Optional) Region. if not, current region will be used."
   type        = "string"
-  default     = "none"
+  default     = "us-east-1"
 }
 variable "subject_alternative_names" {
   description = "(Optional) SANs a.k.a Subject Alternative Names"
